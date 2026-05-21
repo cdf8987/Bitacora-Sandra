@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1008 492" role="img" aria-labelledby="title">
+  <title id="title">Viajera en un paisaje de desierto</title>
+  <defs>
+    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#f9d6b4"/>
+      <stop offset=".55" stop-color="#edb56f"/>
+      <stop offset="1" stop-color="#c98337"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e6a256"/>
+      <stop offset=".55" stop-color="#f0c175"/>
+      <stop offset="1" stop-color="#bc7430"/>
+    </linearGradient>
+  </defs>
+  <rect width="1008" height="492" fill="url(#dsky)"/>
+  <path d="M0 250c164-84 256-86 411-31 132 48 268 18 354-14 96-36 166-24 243 23v264H0z" fill="url(#sand)"/>
+  <path d="M0 302c148-58 260-53 398-12 121 36 239 43 362-13 95-43 169-47 248-13v228H0z" fill="#dc994f" opacity=".62"/>
+  <path d="M29 362c61-43 107-39 155 0M721 342c52-34 96-32 135 0M562 238c32-22 60-20 90 0" stroke="#9d6e3b" stroke-width="9" fill="none" opacity=".32"/>
+  <g fill="#8d743e" opacity=".45">
+    <ellipse cx="210" cy="283" rx="26" ry="10"/>
+    <ellipse cx="872" cy="260" rx="34" ry="12"/>
+    <ellipse cx="101" cy="379" rx="38" ry="13"/>
+  </g>
+  <g transform="translate(423 112)">
+    <ellipse cx="92" cy="338" rx="135" ry="20" fill="#8c522d" opacity=".24"/>
+    <path d="M47 155c-36 55-45 119-34 202h58l25-162z" fill="#8b4e2e"/>
+    <path d="M134 154c37 59 53 123 49 203h-60l-34-161z" fill="#8b4e2e"/>
+    <path d="M40 126c21-46 95-62 128-1 30 55 19 128-4 188H22c-4-72-1-131 18-187z" fill="#734927"/>
+    <path d="M42 119c43 34 83 37 126 1l10 51c-51 36-99 32-145-2z" fill="#e5b77a"/>
+    <path d="M43 69c15-83 121-86 141-4 15 63-14 107-68 115-54-6-84-50-73-111z" fill="#edc19b"/>
+    <path d="M15 62c59-70 143-77 206-7-62-17-129-16-206 7z" fill="#d7a567"/>
+    <path d="M61 92c31-10 66-10 102 0v75c-44 27-80 24-102-1z" fill="#c98e57"/>
+    <path d="M78 27c53-19 95-12 126 24-47-13-91-11-135 6z" fill="#edcb9c"/>
+    <path d="M171 111c58 11 103 44 136 99" stroke="#e9b68c" stroke-width="23" stroke-linecap="round" fill="none"/>
+    <rect x="254" y="166" width="32" height="42" rx="9" fill="#303844"/>
+    <path d="M20 145c-46 39-74 86-84 141" stroke="#e9b68c" stroke-width="25" stroke-linecap="round" fill="none"/>
+    <path d="M74 97c19-8 50-9 85 0" stroke="#1a1513" stroke-width="8" stroke-linecap="round"/>
+    <path d="M90 145c27 13 51 12 72-2" stroke="#7d332f" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

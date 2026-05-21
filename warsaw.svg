@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 527 650" role="img" aria-labelledby="title">
+  <title id="title">Viajera frente a un edificio histórico europeo</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#b7b0a5"/>
+      <stop offset=".45" stop-color="#dfd6ca"/>
+      <stop offset="1" stop-color="#d7c3aa"/>
+    </linearGradient>
+    <linearGradient id="plaza" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#c9a07e"/>
+      <stop offset="1" stop-color="#85644d"/>
+    </linearGradient>
+  </defs>
+  <rect width="527" height="650" fill="url(#sky)"/>
+  <rect y="392" width="527" height="258" fill="url(#plaza)"/>
+  <g opacity=".26" stroke="#68452e" stroke-width="2">
+    <path d="M0 430h527M0 480h527M0 530h527M0 580h527M42 392L5 650M128 392l-22 258M220 392l-8 258M315 392l11 258M411 392l34 258"/>
+  </g>
+  <g transform="translate(150 92)">
+    <rect x="-118" y="156" width="440" height="156" fill="#c85634"/>
+    <rect x="-118" y="256" width="440" height="31" fill="#fff8ed"/>
+    <g fill="#f7ead7">
+      <rect x="-82" y="190" width="30" height="42"/>
+      <rect x="-23" y="190" width="30" height="42"/>
+      <rect x="39" y="190" width="30" height="42"/>
+      <rect x="101" y="190" width="30" height="42"/>
+      <rect x="163" y="190" width="30" height="42"/>
+      <rect x="225" y="190" width="30" height="42"/>
+    </g>
+    <path d="M-120 156h445L265 110H-72z" fill="#9b321e"/>
+    <g transform="translate(126 0)">
+      <rect x="0" y="58" width="80" height="254" fill="#bd5638"/>
+      <rect x="18" y="82" width="44" height="52" fill="#f5e5cf"/>
+      <rect x="21" y="156" width="38" height="48" fill="#f5e5cf"/>
+      <path d="M5 58h70L58 28H22z" fill="#443b34"/>
+      <path d="M20 28h40L50 0H30z" fill="#223027"/>
+      <rect x="35" y="-42" width="10" height="42" fill="#334236"/>
+      <circle cx="40" cy="145" r="18" fill="#f3d39b" stroke="#5c3f27" stroke-width="4"/>
+    </g>
+  </g>
+  <g transform="translate(226 330)">
+    <ellipse cx="64" cy="294" rx="78" ry="17" fill="#4d3526" opacity=".23"/>
+    <path d="M33 144c-18 50-26 94-36 161h35c9-52 20-94 37-138z" fill="#161516"/>
+    <path d="M93 143c17 50 26 96 33 162H91c-6-54-18-96-38-139z" fill="#171617"/>
+    <path d="M-2 309h42c4 12-3 21-24 21H0zM86 309h42c6 14-3 21-25 21H88z" fill="#fff"/>
+    <path d="M25 48c-16 26-22 64-13 111 30 21 77 23 105-3 1-48-9-85-31-109z" fill="#181417"/>
+    <path d="M45 15c16-17 46-8 48 18 2 31-19 42-37 33-22-10-28-32-11-51z" fill="#f0c1a5"/>
+    <path d="M38 25c10-31 58-27 70 8-18-10-37-13-70-8z" fill="#d8b38d"/>
+    <path d="M54 59c-20 20-24 50-23 79 17 16 53 20 78 6 0-33-7-61-25-85z" fill="#20191a"/>
+  </g>
+  <g fill="#fafafa" opacity=".85">
+    <rect x="360" y="344" width="118" height="34" rx="4"/>
+    <rect x="406" y="327" width="18" height="20"/>
+  </g>
+</svg>

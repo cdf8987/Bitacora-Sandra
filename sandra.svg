@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 980" role="img" aria-labelledby="title">
+  <title id="title">Viajera sonriendo junto al mar</title>
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#72d5e9"/>
+      <stop offset=".55" stop-color="#eefaf9"/>
+      <stop offset="1" stop-color="#f5f2df"/>
+    </linearGradient>
+    <linearGradient id="tree" x1="0" x2="1">
+      <stop stop-color="#77671f"/>
+      <stop offset="1" stop-color="#a1993d"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="980" fill="url(#sea)"/>
+  <rect y="558" width="900" height="422" fill="#f7f1e8"/>
+  <path d="M0 188c180-76 298-58 418-98 154-51 308-55 482-4v144c-206-74-366-49-536-19-138 24-241 6-364 51z" fill="url(#tree)" opacity=".82"/>
+  <g stroke="#7b6229" stroke-width="18" stroke-linecap="round" opacity=".85">
+    <path d="M-18 203C182 64 328 72 520 30"/>
+    <path d="M238 110c-18 90-64 155-140 198"/>
+    <path d="M514 32c46 78 122 132 244 154"/>
+    <path d="M430 50c-10 71-35 127-93 183"/>
+  </g>
+  <path d="M520 355h380v122H520z" fill="#0c8ec6" opacity=".7"/>
+  <path d="M520 355h380" stroke="#fff" stroke-width="9" opacity=".85"/>
+  <g transform="translate(294 350)">
+    <ellipse cx="134" cy="594" rx="165" ry="28" fill="#6f543e" opacity=".18"/>
+    <path d="M77 142c-53 49-79 130-81 260h276c3-127-23-210-82-260z" fill="#fff5f4"/>
+    <path d="M76 142c18 108 48 182 82 260 30-85 44-169 32-260z" fill="#fff"/>
+    <path d="M73 142c28 22 65 33 116 1l-15-58H88z" fill="#f2c4a8"/>
+    <path d="M53 56c5-58 91-82 134-39 35 35 30 104-9 132-40 29-104 11-124-26-11-20-7-44-1-67z" fill="#f3c6aa"/>
+    <path d="M20 70c38-85 159-102 214-12-73-14-139-16-214 12z" fill="#d5aa68"/>
+    <path d="M41 66h191" stroke="#8e6632" stroke-width="15" stroke-linecap="round"/>
+    <path d="M67 350l-72 244h70l64-202zM234 349l100 241h-70l-94-196z" fill="#f1c2a7"/>
+    <path d="M35 423c72 35 158 35 241 0l-18 183H56z" fill="#7c4a30"/>
+    <path d="M31 605h231l22 145H6z" fill="#d7a77a"/>
+    <path d="M9 666h276" stroke="#8a5337" stroke-width="9"/>
+    <path d="M284 320l78-26" stroke="#f1c2a7" stroke-width="34" stroke-linecap="round"/>
+    <path d="M15 319l-88-30" stroke="#f1c2a7" stroke-width="34" stroke-linecap="round"/>
+    <path d="M88 87c38-12 80-10 120 3" stroke="#131313" stroke-width="24" stroke-linecap="round" opacity=".82"/>
+    <circle cx="118" cy="92" r="26" fill="#121212" opacity=".9"/>
+    <circle cx="181" cy="95" r="26" fill="#121212" opacity=".9"/>
+    <path d="M119 129c22 18 45 19 70 2" stroke="#b6625b" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M219 150c54 55 60 132 45 216" stroke="#d3ad79" stroke-width="31" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(116 340)">
+    <path d="M74 58c12-43 75-42 87 0 13 44-21 83-44 89-28-6-55-48-43-89z" fill="#d7a564" stroke="#6b4f2d" stroke-width="5"/>
+    <path d="M84 58c24 15 47 16 69 0" stroke="#6b4f2d" stroke-width="4"/>
+    <circle cx="105" cy="82" r="7" fill="#222"/>
+    <circle cx="138" cy="82" r="7" fill="#222"/>
+    <path d="M119 94l16 15-23 4z" fill="#5d3e25"/>
+    <path d="M95 145l-42 34" stroke="#704c2e" stroke-width="6" fill="none"/>
+  </g>
+</svg>
