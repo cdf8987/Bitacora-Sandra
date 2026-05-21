@@ -361,12 +361,16 @@ h1 {
 }
 
 .footer-contact li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   margin-bottom: 10px;
   color: var(--muted);
   font-size: 1.16rem;
+}
+
+.footer-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 
 @media (max-width: 1300px) {
@@ -395,27 +399,28 @@ h1 {
 }
 
 .contact-icon {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #7f7f7f;
-  border-radius: 50%;
+  border-radius: 7px;
   color: #333;
-  font-size: 0.88rem;
+  font-size: 1rem;
+  line-height: 1;
+  object-fit: cover;
 }
 
-.whatsapp {
-  border-color: #35d86e;
-  background: #35d86e;
-  color: #fff;
+.email {
+  border: 1.5px solid #6f6a61;
+  background: #fffdf7;
+  color: #4b4b45;
 }
 
-.instagram {
-  border-color: #e36b83;
-  background: linear-gradient(135deg, #ffc35d, #df4488 55%, #8754d5);
-  color: #fff;
+.image-icon {
+  border: 0;
+  padding: 0;
 }
 
 @media (max-width: 900px) {
