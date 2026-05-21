@@ -399,15 +399,15 @@ h1 {
 }
 
 .contact-icon {
-  width: 28px;
-  height: 28px;
-  flex: 0 0 28px;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 7px;
+  border-radius: 6px;
   color: #333;
-  font-size: 1rem;
+  font-size: 0.86rem;
   line-height: 1;
   object-fit: cover;
 }
@@ -421,6 +421,86 @@ h1 {
 .image-icon {
   border: 0;
   padding: 0;
+}
+
+.email-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.email-modal:target {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(39, 28, 20, 0.42);
+}
+
+.email-form {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 100%);
+  display: grid;
+  gap: 16px;
+  background: var(--paper);
+  border: 1px solid rgba(92, 63, 39, 0.22);
+  border-radius: 8px;
+  padding: 34px;
+  color: var(--brown);
+  box-shadow: 0 24px 70px rgba(48, 32, 20, 0.22);
+}
+
+.email-form h2 {
+  margin: 0 0 4px;
+  font-size: 2.1rem;
+}
+
+.email-form label {
+  display: grid;
+  gap: 7px;
+  font-size: 1rem;
+}
+
+.email-form input,
+.email-form textarea {
+  width: 100%;
+  border: 1px solid rgba(92, 63, 39, 0.35);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--brown-dark);
+  font: inherit;
+  padding: 12px 13px;
+}
+
+.email-form textarea {
+  resize: vertical;
+}
+
+.email-form button {
+  justify-self: start;
+  border: 0;
+  border-radius: 999px;
+  background: var(--brown);
+  color: #fff;
+  font: inherit;
+  padding: 13px 26px;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {

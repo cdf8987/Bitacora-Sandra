@@ -75,7 +75,7 @@
 
       <section class="destination compact-destination">
         <h2>Hablemos de tu próximo destino</h2>
-        <a class="outline-button" href="mailto:labitacoradesandra@gmail.com">Ir al formulario</a>
+        <a class="outline-button" href="#email-modal">Ir al formulario</a>
       </section>
     </main>
 
@@ -91,7 +91,7 @@
           <h2>Contacto</h2>
           <ul>
             <li>
-              <a href="mailto:labitacoradesandra@gmail.com">
+              <a href="#email-modal">
                 <span class="contact-icon email" aria-hidden="true">✉</span>
                 <span>labitacoradesandra@gmail.com</span>
               </a>
@@ -112,5 +112,27 @@
         </div>
       </div>
     </footer>
+
+    <div class="email-modal" id="email-modal" role="dialog" aria-labelledby="email-modal-title">
+      <a class="modal-backdrop" href="#contacto" aria-label="Cerrar formulario"></a>
+      <form class="email-form">
+        <a class="modal-close" href="#contacto" aria-label="Cerrar formulario">×</a>
+        <h2 id="email-modal-title">Enviar email</h2>
+        <label>
+          Tu nombre
+          <input type="text" name="name" autocomplete="name">
+        </label>
+        <label>
+          Tu email
+          <input type="email" name="email" autocomplete="email">
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Preparar email</button>
+      </form>
+    </div>
+    <script src="contact-form.js"></script>
   </body>
 </html>
