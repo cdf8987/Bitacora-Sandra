@@ -43,12 +43,14 @@ a {
 
 .brand {
   width: min(465px, 100%);
+  margin-top: -10px;
+  margin-left: -48px;
   text-decoration: none;
 }
 
 .brand img {
-  width: 430px;
-  height: 170px;
+  width: 560px;
+  height: 205px;
   object-fit: cover;
   object-position: center;
 }
@@ -200,15 +202,16 @@ h1 {
   isolation: isolate;
   min-height: 1118px;
   overflow: hidden;
-  padding: 18px 70px 34px;
+  padding: 18px 64px 34px;
 }
 
 .guide h1,
 .guide h2 {
-  margin: 0 0 44px;
+  margin: 0 auto 44px;
   max-width: none;
   font-size: clamp(3.6rem, 5.7vw, 5.8rem);
   line-height: 0.98;
+  text-align: center;
 }
 
 .guide-watermark {
@@ -224,18 +227,18 @@ h1 {
 .steps {
   display: grid;
   gap: 25px;
-  width: min(800px, 100%);
+  width: min(1440px, 82vw);
   margin: 0 auto;
 }
 
 .step {
-  min-height: 142px;
+  min-height: 168px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: rgba(247, 241, 232, 0.86);
   border-radius: 54px;
-  padding: 23px 28px;
+  padding: 30px 34px;
 }
 
 .step h3 {
