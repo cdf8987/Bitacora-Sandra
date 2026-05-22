@@ -228,7 +228,7 @@ h1 {
   z-index: -1;
   left: 50%;
   top: 52%;
-  width: min(1015px, 86vw);
+  width: min(1220px, 102vw);
   transform: translate(-50%, -50%);
   opacity: 0.07;
 }
@@ -261,6 +261,18 @@ h1 {
   color: var(--brown-dark);
   font-size: clamp(1.2rem, 1.35vw, 1.35rem);
   line-height: 1.28;
+}
+
+.step-with-button {
+  min-height: 300px;
+  padding-bottom: 38px;
+}
+
+.step-with-button .outline-button {
+  align-self: center;
+  min-width: 303px;
+  min-height: 101px;
+  margin: 28px 0 0;
 }
 
 .destination {
@@ -325,12 +337,20 @@ h1 {
 .footer-inner {
   min-height: 280px;
   display: grid;
-  grid-template-columns: 360px 330px minmax(330px, 1fr);
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
   grid-template-rows: auto auto;
   align-items: start;
-  gap: 42px 72px;
+  gap: 42px;
   border-bottom: 2px solid var(--brown);
-  padding: 0 14px 36px;
+  padding: 0 clamp(24px, 6vw, 100px) 36px;
+}
+
+.footer-brand {
+  justify-self: start;
+}
+
+.footer-contact {
+  justify-self: center;
 }
 
 .footer-brand img {
@@ -349,7 +369,9 @@ h1 {
 
 .copyright {
   grid-column: 1 / -1;
-  margin-top: 26px !important;
+  justify-self: center;
+  margin: 26px 0 0 !important;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -372,11 +394,14 @@ h1 {
 
 .footer-legal {
   align-self: start;
+  justify-self: end;
   padding-top: 92px;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   line-height: 1.35;
   text-align: center;
+  display: grid;
+  gap: 6px;
 }
 
 .footer-legal p {
@@ -384,7 +409,9 @@ h1 {
 }
 
 .footer-legal a {
+  display: block;
   color: var(--brown);
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -393,6 +420,69 @@ h1 {
   align-items: center;
   gap: 10px;
   text-decoration: none;
+}
+
+.legal-header {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 42px 28px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  color: var(--brown);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.legal-header > a {
+  color: var(--brown);
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.legal-header nav {
+  display: flex;
+  gap: clamp(20px, 4vw, 54px);
+  font-size: 1.25rem;
+}
+
+.legal-header nav a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+.legal-document {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 54px 28px 90px;
+  color: var(--brown);
+}
+
+.legal-document h1 {
+  max-width: none;
+  margin: 0 0 38px;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+}
+
+.legal-document h2 {
+  margin: 34px 0 12px;
+  font-size: clamp(1.75rem, 2.4vw, 2.35rem);
+}
+
+.legal-document p,
+.legal-document li {
+  font-size: clamp(1.12rem, 1.4vw, 1.28rem);
+  line-height: 1.45;
+}
+
+.legal-document p {
+  margin: 0 0 16px;
+}
+
+.legal-document ul,
+.legal-document ol {
+  margin: 0 0 18px;
+  padding-left: 28px;
 }
 
 @media (max-width: 1300px) {
@@ -420,8 +510,9 @@ h1 {
   }
 
   .footer-inner {
-    grid-template-columns: 320px 300px minmax(280px, 1fr);
-    gap: 38px;
+    grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr) minmax(260px, 1fr);
+    gap: 30px;
+    padding-inline: 28px;
   }
 }
 
@@ -585,17 +676,21 @@ h1 {
   .brand img {
     width: 300px;
     height: 110px;
+    margin-inline: auto;
   }
 
   .brand {
+    width: 100%;
     margin-top: 0;
     margin-left: 0;
+    text-align: center;
   }
 
   .main-nav {
     width: 100%;
     font-size: 1.2rem;
     gap: 20px 25px;
+    justify-content: center;
   }
 
   .nav-cta {
@@ -637,10 +732,31 @@ h1 {
   }
 
   .hero {
-    display: block;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
     min-height: auto;
     gap: 28px;
     padding-top: 8px;
+  }
+
+  .hero-copy {
+    display: contents;
+  }
+
+  .hero-copy h1 {
+    order: 1;
+  }
+
+  .hero-copy p:first-of-type {
+    order: 2;
+  }
+
+  .hero-photo {
+    order: 3;
+  }
+
+  .hero-copy p:nth-of-type(n + 2) {
+    order: 4;
   }
 
   .hero p,
@@ -650,7 +766,7 @@ h1 {
   }
 
   .hero-photo {
-    margin-top: 30px;
+    margin-top: 4px;
   }
 
   .hero p,
@@ -686,14 +802,44 @@ h1 {
     margin-bottom: 44px;
   }
 
+  .step-with-button {
+    min-height: 280px;
+  }
+
+  .step-with-button .outline-button {
+    margin: 24px 0 0;
+  }
+
   .footer-inner {
     grid-template-columns: 1fr;
     gap: 28px;
   }
 
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-brand img {
+    margin-inline: auto;
+  }
+
   .footer-legal {
     padding-top: 0;
     text-align: left;
+  }
+
+  .legal-header {
+    display: grid;
+    justify-content: start;
+    padding: 30px 22px 12px;
+  }
+
+  .legal-header nav {
+    flex-wrap: wrap;
+  }
+
+  .legal-document {
+    padding: 30px 22px 70px;
   }
 
   .copyright {
