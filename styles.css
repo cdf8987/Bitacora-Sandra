@@ -408,16 +408,19 @@ h1 {
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-template-rows: auto auto;
   align-items: start;
-  gap: 42px;
+  column-gap: clamp(38px, 5vw, 82px);
+  row-gap: 42px;
   border-bottom: 2px solid var(--brown);
   padding: 0 clamp(24px, 6vw, 100px) 36px;
 }
 
 .footer-brand {
+  width: min(360px, 100%);
   justify-self: start;
 }
 
 .footer-contact {
+  width: min(360px, 100%);
   justify-self: center;
 }
 
@@ -462,8 +465,9 @@ h1 {
 
 .footer-legal {
   align-self: start;
+  width: min(360px, 100%);
   justify-self: center;
-  padding-top: 92px;
+  padding-top: 52px;
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.35;
