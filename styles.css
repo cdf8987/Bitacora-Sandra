@@ -319,16 +319,18 @@ h1 {
 
 .site-footer {
   background: var(--paper);
-  padding: 56px 58px 0;
+  padding: 44px 58px 0;
 }
 
 .footer-inner {
-  min-height: 323px;
+  min-height: 280px;
   display: grid;
   grid-template-columns: 360px 330px minmax(330px, 1fr);
-  gap: 72px;
+  grid-template-rows: auto auto;
+  align-items: start;
+  gap: 42px 72px;
   border-bottom: 2px solid var(--brown);
-  padding: 0 14px 43px;
+  padding: 0 14px 36px;
 }
 
 .footer-brand img {
@@ -336,7 +338,7 @@ h1 {
   height: 94px;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 }
 
 .footer-brand p {
@@ -346,12 +348,13 @@ h1 {
 }
 
 .copyright {
-  margin-top: 70px !important;
+  grid-column: 1 / -1;
+  margin-top: 26px !important;
   white-space: nowrap;
 }
 
 .footer-contact h2 {
-  margin: 25px 0 44px;
+  margin: 21px 0 34px;
   font-size: 1.55rem;
 }
 
@@ -369,7 +372,7 @@ h1 {
 
 .footer-legal {
   align-self: start;
-  padding-top: 94px;
+  padding-top: 92px;
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.35;
@@ -381,7 +384,7 @@ h1 {
 }
 
 .footer-legal a {
-  color: #16abc3;
+  color: var(--brown);
   text-decoration: none;
 }
 
