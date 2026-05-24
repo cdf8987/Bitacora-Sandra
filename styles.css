@@ -253,6 +253,39 @@ h1 {
   object-position: center top;
 }
 
+.about-curiosities {
+  padding: 0 82px 82px;
+}
+
+.about-curiosities-card {
+  width: 100%;
+  background: rgba(247, 241, 232, 0.86);
+  border-radius: 54px;
+  padding: clamp(34px, 4vw, 58px);
+}
+
+.about-curiosities h2 {
+  margin: 0 0 28px;
+  font-size: clamp(2.8rem, 4vw, 4.2rem);
+  line-height: 1;
+}
+
+.about-curiosities ul {
+  columns: 2;
+  column-gap: clamp(44px, 6vw, 96px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-curiosities li {
+  break-inside: avoid;
+  margin: 0 0 15px;
+  color: var(--brown-dark);
+  font-size: clamp(1.08rem, 1.25vw, 1.24rem);
+  line-height: 1.32;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -285,7 +318,7 @@ h1 {
   z-index: -1;
   left: 50%;
   top: 52%;
-  width: min(1220px, 102vw);
+  width: min(1510px, 128vw);
   transform: translate(-50%, -50%);
   opacity: 0.07;
 }
@@ -403,12 +436,14 @@ h1 {
 }
 
 .footer-inner {
+  max-width: 1280px;
   min-height: 280px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(260px, 320px));
   grid-template-rows: auto auto;
   align-items: start;
-  column-gap: clamp(38px, 5vw, 82px);
+  justify-content: center;
+  column-gap: clamp(48px, 7vw, 110px);
   row-gap: 42px;
   border-bottom: 2px solid var(--brown);
   padding: 0 clamp(24px, 6vw, 100px) 36px;
@@ -416,7 +451,7 @@ h1 {
 
 .footer-brand {
   width: min(360px, 100%);
-  justify-self: start;
+  justify-self: center;
 }
 
 .footer-contact {
@@ -467,7 +502,7 @@ h1 {
   align-self: start;
   width: min(360px, 100%);
   justify-self: center;
-  padding-top: 52px;
+  padding-top: 54px;
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.35;
@@ -726,6 +761,14 @@ h1 {
     padding-inline: 36px;
   }
 
+  .about-curiosities {
+    padding-inline: 36px;
+  }
+
+  .about-curiosities ul {
+    columns: 1;
+  }
+
   .about-page-story {
     grid-template-columns: 1fr;
   }
@@ -861,6 +904,19 @@ h1 {
 
   .story-photo {
     border-radius: 36px;
+  }
+
+  .about-curiosities {
+    padding: 0 22px 58px;
+  }
+
+  .about-curiosities-card {
+    border-radius: 32px;
+    padding: 28px 22px;
+  }
+
+  .about-curiosities h2 {
+    font-size: clamp(2.4rem, 10vw, 3.2rem);
   }
 
   .step {
