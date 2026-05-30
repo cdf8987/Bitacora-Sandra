@@ -43,6 +43,63 @@
     }
   };
 
+  const faqEs = [
+    ["¿Qué es una asesoría de viajes personalizada?", "La asesoría de viajes personalizada es un servicio en el que te ayudo a organizar un viaje totalmente adaptado a tus gustos, presupuesto y forma de viajar. En La Bitácora de Sandra creo itinerarios personalizados con recomendaciones de vuelos, alojamientos, rutas, actividades y consejos prácticos para que disfrutes del viaje sin perder horas organizándolo."],
+    ["¿En qué se diferencia a una agencia de viajes?", "A diferencia de una agencia tradicional, mi servicio de asesoría de viajes personalizada está pensado para ayudarte a organizar un viaje adaptado a ti, sin paquetes cerrados ni precios inflados. Mientras que muchas agencias trabajan con viajes prefabricados y comisiones por reservas, yo busco las opciones que mejor encajan con tu presupuesto y forma de viajar."],
+    ["¿Qué incluye el servicio ofrecido por La Bitácora de Sandra?", "Esto dependerá del servicio que quieras contratar, ya sea un Paquete de servicios o incluso puedes elegir servicios independientes, para lo que crearé un presupuesto adaptado a tus necesidades."],
+    ["¿Qué tipo de viajes puedes organizar?", "Desde escapadas de fin de semana a estancias de 2/3 semanas, un mes... Road trips, viajes de mochilero, viajes en pareja, viajes con amigos, viajes en familia con niños, itinerarios multicity, viajes sorpresa, lunas de miel y viajes de fin de curso. Me adaptaré a lo que necesites."],
+    ["¿Cuál es el precio del servicio?", "Puedes elegir un Paquete de servicios a un precio fijo (<a href=\"servicios.html\">ver tarifas</a>), o puedes solicitarme un presupuesto personalizado en base a los servicios que necesites."],
+    ["¿Cuánto tiempo esperaré para recibir mi itinerario en PDF?", "Esto dependerá de la complejidad de la planificación (Paquete elegido, días de duración, extras solicitados). El tiempo estimado es de 3-7 días."],
+    ["¿Realizas las reservas de todos los servicios?", "No realizo reservas directamente. Te envío los enlaces de las mejores opciones de vuelos, alojamientos y transporte para que puedas reservarlas tú mismo/a de forma sencilla y segura. ¡Pero te acompaño en el proceso de reserva si lo necesitas!"],
+    ["¿Puedo contratar servicios independientes sin necesidad de elegir un Pack?", "Por supuesto. Crearé un presupuesto personalizado para ti en base a lo que necesites."],
+    ["¿Necesito elegir el destino antes de contratar el servicio?", "Por más que suene extraño... ¡no! Basándome en mi experiencia, hay destinos mejores que otros según la temporada en la que decidas viajar. Dime en qué mes/temporada te gustaría viajar y te propondré diferentes destinos."],
+    ["¿Por qué elegir La Bitácora de Sandra para planificar mi viaje?", "Porque a la hora de elaborar mis itinerarios he pensado hasta en el más mínimo detalle. Entre otros extras, te ofrezco recomendaciones de restaurantes, APPs que te pueden salvar de más de un apuro, recomendaciones de outfits para ir siempre preparado, impresión del PDF en versión revista, tarjetas de regalo para que tu viaje no acabe el día que regresas... ¡y muchas otras sorpresas!"],
+    ["¿Puedes planificar un viaje sorpresa para un regalo?", "¡Claro que sí! Y como persona bien coqueta que soy, te ofrezco la posibilidad de preparar un packaging de regalo ideal para que no solo el contenido sea una sorpresa inolvidable."],
+    ["¿Puedo contratar tus servicios aunque no viva en España?", "Sí. Mis itinerarios incluyen partida desde cualquier origen y a cualquier destino en el mundo."],
+    ["¿Tendré asistencia para incidencias o imprevistos durante mi viaje?", "Uno de los servicios que te ofrezco es la asistencia durante tu viaje. Te daré un teléfono de contacto al que podrás escribirme/llamarme si necesitas mi ayuda para cualquier imprevisto."],
+    ["¿Puedo pedir cambios una vez reciba el itinerario en PDF?", "Sí. Entiendo que una vez recibidas las opciones que te ofrezco necesites cambiar/añadir otras alternativas. Según el cambio que se solicite podría conllevar un suplemento."],
+    ["¿Puedo pedir reembolso?", "No. Una vez aceptes el presupuesto y yo comience a trabajar en tu itinerario no podrás solicitar el reembolso, puesto que ya habré invertido mi tiempo en ello."],
+    ["¿Cómo puedo pagar?", "Los métodos de pago aceptados, por el momento, son los siguientes: Bizum, transferencia bancaria y Paypal."]
+  ];
+
+  const faqEn = [
+    ["What is personalized travel consulting?", "Personalized travel consulting is a service where I help you organize a trip fully adapted to your tastes, budget and travel style. At La Bitácora de Sandra I create custom itineraries with recommendations for flights, accommodation, routes, activities and practical tips so you can enjoy your trip without spending hours organizing it."],
+    ["How is it different from a travel agency?", "Unlike a traditional agency, my personalized travel consulting service is designed to help you organize a trip adapted to you, without fixed packages or inflated prices. While many agencies work with pre-made trips and booking commissions, I look for the options that best fit your budget and way of travelling."],
+    ["What does the service offered by La Bitácora de Sandra include?", "It depends on the service you want to book. You can choose a service package, or even choose independent services, and I will create a quote adapted to your needs."],
+    ["What kind of trips can you organize?", "From weekend getaways to stays of 2 or 3 weeks, or even a month. Road trips, backpacking trips, couples trips, trips with friends, family trips with children, multicity itineraries, surprise trips, honeymoons and end-of-course trips. I will adapt to what you need."],
+    ["What is the price of the service?", "You can choose a service package at a fixed price (<a href=\"servicios.html\">see rates</a>), or request a personalized quote based on the services you need."],
+    ["How long will I wait to receive my PDF itinerary?", "This depends on the complexity of the planning (chosen package, trip length, requested extras). The estimated time is 3-7 days."],
+    ["Do you make reservations for all services?", "I do not make reservations directly. I send you links to the best flight, accommodation and transport options so you can book them yourself easily and safely. But I can support you during the booking process if you need it!"],
+    ["Can I book independent services without choosing a package?", "Of course. I will create a personalized quote for you based on what you need."],
+    ["Do I need to choose the destination before booking the service?", "As strange as it may sound... no! Based on my experience, some destinations are better than others depending on the season you want to travel. Tell me which month or season you would like to travel and I will suggest different destinations."],
+    ["Why choose La Bitácora de Sandra to plan my trip?", "Because when creating my itineraries I think about even the smallest detail. Among other extras, I offer restaurant recommendations, apps that can save you from more than one problem, outfit recommendations so you are always prepared, printing the PDF in magazine format, gift cards so your trip does not end the day you return... and many other surprises!"],
+    ["Can you plan a surprise trip as a gift?", "Of course! And as someone who loves pretty details, I offer the possibility of preparing ideal gift packaging so not only the content becomes an unforgettable surprise."],
+    ["Can I book your services if I do not live in Spain?", "Yes. My itineraries include departure from any origin and to any destination in the world."],
+    ["Will I have assistance for incidents or unexpected issues during my trip?", "One of the services I offer is assistance during your trip. I will give you a contact phone number so you can write or call me if you need help with any unexpected issue."],
+    ["Can I request changes once I receive the PDF itinerary?", "Yes. I understand that once you receive the options I offer, you may need to change or add alternatives. Depending on the requested change, there may be an additional fee."],
+    ["Can I request a refund?", "No. Once you accept the quote and I start working on your itinerary, you will not be able to request a refund, as I will already have invested my time in it."],
+    ["How can I pay?", "The accepted payment methods, for now, are: Bizum, bank transfer and Paypal."]
+  ];
+
+  const faqFr = [
+    ["Qu’est-ce qu’un conseil voyage personnalisé ?", "Le conseil voyage personnalisé est un service dans lequel je vous aide à organiser un voyage entièrement adapté à vos goûts, votre budget et votre façon de voyager. Chez La Bitácora de Sandra, je crée des itinéraires personnalisés avec des recommandations de vols, hébergements, routes, activités et conseils pratiques pour profiter du voyage sans passer des heures à l’organiser."],
+    ["En quoi est-ce différent d’une agence de voyages ?", "Contrairement à une agence traditionnelle, mon service de conseil voyage personnalisé est pensé pour vous aider à organiser un voyage adapté à vous, sans forfaits fermés ni prix gonflés. Alors que de nombreuses agences travaillent avec des voyages préfabriqués et des commissions sur les réservations, je recherche les options qui correspondent le mieux à votre budget et à votre façon de voyager."],
+    ["Que comprend le service proposé par La Bitácora de Sandra ?", "Cela dépendra du service que vous souhaitez réserver. Vous pouvez choisir un pack de services ou même des services indépendants, et je créerai un devis adapté à vos besoins."],
+    ["Quel type de voyages pouvez-vous organiser ?", "Des escapades de week-end aux séjours de 2/3 semaines, voire un mois. Road trips, voyages en sac à dos, voyages en couple, voyages entre amis, voyages en famille avec enfants, itinéraires multicity, voyages surprise, lunes de miel et voyages de fin d’études. Je m’adapterai à vos besoins."],
+    ["Quel est le prix du service ?", "Vous pouvez choisir un pack de services à prix fixe (<a href=\"servicios.html\">voir tarifs</a>), ou me demander un devis personnalisé selon les services dont vous avez besoin."],
+    ["Combien de temps faudra-t-il pour recevoir mon itinéraire en PDF ?", "Cela dépendra de la complexité de la planification (pack choisi, durée du voyage, extras demandés). Le délai estimé est de 3 à 7 jours."],
+    ["Effectuez-vous les réservations de tous les services ?", "Je n’effectue pas les réservations directement. Je vous envoie les liens vers les meilleures options de vols, hébergements et transports afin que vous puissiez réserver vous-même simplement et en toute sécurité. Mais je vous accompagne dans le processus de réservation si vous en avez besoin !"],
+    ["Puis-je réserver des services indépendants sans choisir de pack ?", "Bien sûr. Je créerai un devis personnalisé pour vous selon vos besoins."],
+    ["Dois-je choisir la destination avant de réserver le service ?", "Aussi étrange que cela puisse paraître... non ! D’après mon expérience, certaines destinations sont meilleures que d’autres selon la saison à laquelle vous souhaitez voyager. Dites-moi le mois ou la saison où vous aimeriez partir et je vous proposerai différentes destinations."],
+    ["Pourquoi choisir La Bitácora de Sandra pour planifier mon voyage ?", "Parce que lorsque je prépare mes itinéraires, je pense au moindre détail. Parmi d’autres extras, je propose des recommandations de restaurants, des applications qui peuvent vous sauver plus d’une fois, des conseils de tenues pour être toujours prêt, l’impression du PDF en version magazine, des cartes cadeau pour que votre voyage ne se termine pas le jour du retour... et bien d’autres surprises !"],
+    ["Pouvez-vous planifier un voyage surprise comme cadeau ?", "Bien sûr ! Et comme j’aime les jolis détails, je vous propose la possibilité de préparer un packaging cadeau idéal pour que le contenu ne soit pas la seule surprise inoubliable."],
+    ["Puis-je réserver vos services si je ne vis pas en Espagne ?", "Oui. Mes itinéraires incluent un départ depuis n’importe quelle origine et vers n’importe quelle destination dans le monde."],
+    ["Aurai-je une assistance en cas d’incident ou d’imprévu pendant mon voyage ?", "L’un des services que je propose est l’assistance pendant votre voyage. Je vous donnerai un numéro de contact auquel vous pourrez m’écrire ou m’appeler si vous avez besoin d’aide pour un imprévu."],
+    ["Puis-je demander des modifications après avoir reçu l’itinéraire en PDF ?", "Oui. Je comprends qu’après avoir reçu les options proposées, vous puissiez avoir besoin de changer ou d’ajouter d’autres alternatives. Selon le changement demandé, un supplément peut s’appliquer."],
+    ["Puis-je demander un remboursement ?", "Non. Une fois que vous acceptez le devis et que je commence à travailler sur votre itinéraire, vous ne pourrez pas demander de remboursement, car j’aurai déjà investi mon temps dans ce travail."],
+    ["Comment puis-je payer ?", "Les moyens de paiement acceptés, pour le moment, sont : Bizum, virement bancaire et Paypal."]
+  ];
+
   const pages = {
     "index.html": {
       es: {
@@ -69,6 +126,8 @@
           ["🤍", "5. Acompañamiento durante el viaje", "No estarás sola/o. Durante tu viaje contarás con mi apoyo para resolver dudas o imprevistos, para que solo tengas que centrarte en disfrutar."]
         ],
         form: "Ir al formulario",
+        faqTitle: "FAQ - ¿Tienes alguna duda?",
+        faq: faqEs,
         destination: "Hablemos de tu próximo destino"
       },
       en: {
@@ -95,6 +154,8 @@
           ["🤍", "5. Support during your trip", "You won’t be alone. During your trip you’ll have my support to solve questions or unexpected issues, so you can focus only on enjoying it."]
         ],
         form: "Go to the form",
+        faqTitle: "FAQ - Any questions?",
+        faq: faqEn,
         destination: "Let’s talk about your next destination"
       },
       fr: {
@@ -121,6 +182,8 @@
           ["🤍", "5. Accompagnement pendant le voyage", "Vous ne serez pas seul/e. Pendant votre voyage, vous pourrez compter sur mon aide pour répondre aux questions ou imprévus, afin de vous concentrer uniquement sur le plaisir."]
         ],
         form: "Aller au formulaire",
+        faqTitle: "FAQ - Vous avez une question ?",
+        faq: faqFr,
         destination: "Parlons de votre prochaine destination"
       }
     },
@@ -137,6 +200,8 @@
           ["🤍", "5. Acompañamiento durante el viaje", "No estarás sola/o. Durante tu viaje contarás con mi apoyo para resolver dudas o imprevistos, para que solo tengas que centrarte en disfrutar."]
         ],
         form: "Ir al formulario",
+        faqTitle: "FAQ - ¿Tienes alguna duda?",
+        faq: faqEs,
         destination: "Hablemos de tu próximo destino"
       },
       en: {
@@ -151,6 +216,8 @@
           ["🤍", "5. Support during your trip", "You won’t be alone. During your trip you’ll have my support to solve questions or unexpected issues, so you can focus only on enjoying it."]
         ],
         form: "Go to the form",
+        faqTitle: "FAQ - Any questions?",
+        faq: faqEn,
         destination: "Let’s talk about your next destination"
       },
       fr: {
@@ -165,6 +232,8 @@
           ["🤍", "5. Accompagnement pendant le voyage", "Vous ne serez pas seul/e. Pendant votre voyage, vous pourrez compter sur mon aide pour répondre aux questions ou imprévus, afin de vous concentrer uniquement sur le plaisir."]
         ],
         form: "Aller au formulaire",
+        faqTitle: "FAQ - Vous avez une question ?",
+        faq: faqFr,
         destination: "Parlons de votre prochaine destination"
       }
     },
@@ -591,6 +660,13 @@
     });
     document.querySelectorAll(".outline-button").forEach((button) => {
       if (button.textContent.trim().match(/formulario|form/i)) button.textContent = data.form;
+    });
+    setText(".faq-section h2", data.faqTitle);
+    document.querySelectorAll(".faq-item").forEach((item, index) => {
+      const faqItem = data.faq?.[index];
+      if (!faqItem) return;
+      setText("summary", faqItem[0], item);
+      setHtml("p", faqItem[1], item);
     });
     setText(".destination h2", data.destination);
   }
