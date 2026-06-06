@@ -105,12 +105,13 @@
       es: {
         title: "La Bitácora de Sandra",
         description: "Diseño de viajes personalizados para descubrir el mundo de una forma auténtica, cómoda y sin estrés.",
-        h1: "Escribiendo tu próxima gran aventura",
+        h1: "<span>Asesoría de viajes personalizada para crear</span><span>experiencias únicas</span>",
+        subtitle: "Escribiendo tu próxima gran aventura",
         lead: "Hay viajes que se recuerdan por los lugares que visitas. Y otros, por cómo te hicieron sentir.",
-        hero2: "En La Bitácora de Sandra te ayudo a preparar ese viaje pensado para ti, a tu ritmo y según la forma en la que te gusta viajar.",
-        hero3: "Sin prisas, sin planes imposibles y sin perder horas delante de una pantalla intentando organizarlo todo. Porque detrás de cada viaje hay una historia diferente: una escapada para desconectar, un sueño pendiente, una aventura improvisada o esas ganas de volver a sentir la emoción de descubrir un lugar nuevo.",
-        hero4: "Déjame ayudarte a dar forma a ese viaje para que tú solo tengas que disfrutar de la experiencia. Elaboraré para ti un itinerario detallado y adaptado a tu estilo, con propuestas de vuelos, alojamientos, rincones especiales, restaurantes, actividades y consejos prácticos para que tengas todo organizado de manera sencilla y clara.",
-        hero5: "La idea no es solo viajar... es coleccionar momentos, perderse en calles desconocidas, ver atardeceres nuevos y volver a casa con recuerdos que se quedan para siempre.",
+        hero2: "En <strong>La Bitácora de Sandra</strong> te ofrezco un servicio de <strong>asesoría de viajes personalizada</strong> para ayudarte a diseñar un <strong>viaje a medida</strong>, adaptado a tu ritmo, tus gustos y tu presupuesto.",
+        hero3: "Sin prisas, sin itinerarios imposibles y sin perder horas delante de una pantalla comparando vuelos, alojamientos o actividades. Porque detrás de cada viaje hay una historia diferente: una escapada para desconectar, un sueño pendiente, una aventura improvisada o esas ganas de volver a sentir la emoción de descubrir un lugar nuevo.",
+        hero4: "Como <strong>Travel Planner</strong>, me encargo de crear un <strong>itinerario único</strong> pensado exclusivamente para ti, con propuestas de vuelos, alojamientos, restaurantes, actividades, rincones especiales y consejos prácticos para que tengas toda la <strong>planificación de tu viaje</strong> organizada de forma sencilla y clara.",
+        hero5: "La idea no es solo viajar. Es <strong>coleccionar momentos</strong>, perderse en calles desconocidas, descubrir nuevos horizontes y volver a casa con <strong>recuerdos que te acompañarán para siempre.</strong>",
         eyebrow: "Mi historia",
         storyTitle: "Diseñando experiencias con alma y propósito",
         story1: "Soy Sandra, viajera incansable y creadora de experiencias a medida.",
@@ -133,7 +134,8 @@
       en: {
         title: "La Bitácora de Sandra",
         description: "Tailor-made travel design to discover the world in an authentic, comfortable and stress-free way.",
-        h1: "Writing your next great adventure",
+        h1: "<span>Personalized travel consulting to create</span><span>unique experiences</span>",
+        subtitle: "Writing your next great adventure",
         lead: "Some trips are remembered for the places you visit. Others, for how they made you feel.",
         hero2: "At La Bitácora de Sandra, I help you prepare a trip designed for you, at your pace and according to the way you like to travel.",
         hero3: "No rushing, no impossible plans and no hours lost in front of a screen trying to organize everything. Behind every trip there is a different story: a getaway to disconnect, a pending dream, an improvised adventure or the desire to feel the excitement of discovering somewhere new again.",
@@ -161,7 +163,8 @@
       fr: {
         title: "La Bitácora de Sandra",
         description: "Création de voyages personnalisés pour découvrir le monde de façon authentique, confortable et sans stress.",
-        h1: "Écrivons votre prochaine grande aventure",
+        h1: "<span>Conseil en voyages personnalisé pour créer</span><span>des expériences uniques</span>",
+        subtitle: "Écrivons votre prochaine grande aventure",
         lead: "Certains voyages restent en mémoire pour les lieux visités. D’autres, pour ce qu’ils vous ont fait ressentir.",
         hero2: "Chez La Bitácora de Sandra, je vous aide à préparer un voyage pensé pour vous, à votre rythme et selon votre façon de voyager.",
         hero3: "Sans précipitation, sans plans impossibles et sans passer des heures devant un écran à tout organiser. Derrière chaque voyage se cache une histoire différente : une escapade pour déconnecter, un rêve en attente, une aventure improvisée ou l’envie de ressentir à nouveau l’émotion de découvrir un nouvel endroit.",
@@ -634,12 +637,18 @@
   function applyIndex(lang, data) {
     document.title = data.title;
     setMetaDescription(data.description);
-    setText(".hero h1", data.h1);
-    setText(".hero .lead", data.lead);
+    setHtml(".hero h1", data.h1);
+    setText(".hero-subtitle", data.subtitle);
+    setHtml(".hero .lead", data.lead);
     document.querySelectorAll(".hero-copy p:not(.lead)").forEach((p, index) => {
       const values = [data.hero2, data.hero3, data.hero4, data.hero5];
-      if (values[index]) p.textContent = values[index];
+      if (values[index]) p.innerHTML = values[index];
     });
+    if (document.querySelector(".help-copy")) {
+      setText(".story .button", data.more);
+      applyGuide(data);
+      return;
+    }
     setText(".story .eyebrow", data.eyebrow);
     setText(".story h2", data.storyTitle);
     const storyParagraphs = document.querySelectorAll(".story-copy p:not(.eyebrow)");
