@@ -719,9 +719,10 @@
 
   function applyHelp(data) {
     setText(".help-copy h2", data.helpTitle);
-    document.querySelectorAll(".help-copy h3").forEach((heading, index) => {
+    document.querySelectorAll(".help-copy h3:not(.story-return-title)").forEach((heading, index) => {
       if (data.helpSubtitles?.[index]) heading.textContent = data.helpSubtitles[index];
     });
+    setText(".story-return-title", data.storyTitle);
     document.querySelectorAll(".help-copy p").forEach((paragraph, index) => {
       if (data.helpParagraphs?.[index]) paragraph.innerHTML = data.helpParagraphs[index];
     });
