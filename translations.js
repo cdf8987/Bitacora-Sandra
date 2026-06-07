@@ -112,6 +112,25 @@
         hero3: "Sin prisas, sin itinerarios imposibles y sin perder horas delante de una pantalla comparando vuelos, alojamientos o actividades. Porque detrás de cada viaje hay una historia diferente: una escapada para desconectar, un sueño pendiente, una aventura improvisada o esas ganas de volver a sentir la emoción de descubrir un lugar nuevo.",
         hero4: "Como <strong>Travel Planner</strong>, me encargo de crear un <strong>itinerario único</strong> pensado exclusivamente para ti, con propuestas de vuelos, alojamientos, restaurantes, actividades, rincones especiales y consejos prácticos para que tengas toda la <strong>planificación de tu viaje</strong> organizada de forma sencilla y clara.",
         hero5: "La idea no es solo viajar. Es <strong>coleccionar momentos</strong>, perderse en calles desconocidas, descubrir nuevos horizontes y volver a casa con <strong>recuerdos que te acompañarán para siempre.</strong>",
+        helpTitle: "¿Cómo puedo ayudarte?",
+        helpSubtitles: [
+          "✈️ Planificación personalizada",
+          "🗺️ Itinerarios detallados y fáciles de seguir",
+          "🏨 Búsqueda de vuelos y alojamiento",
+          "💡 Recomendaciones y consejos de viaje",
+          "🌍 Viajes adaptados a ti"
+        ],
+        helpParagraphs: [
+          "Organizar un viaje debería ser una parte emocionante de la experiencia, pero a menudo acaba convirtiéndose en horas de búsqueda, comparaciones infinitas y dudas sobre si estás tomando la mejor decisión.",
+          "Ahí es donde puedo ayudarte.",
+          "Como <strong>Travel Planner</strong>, te ofrezco una <strong>asesoría de viajes personalizada</strong> para que disfrutes del proceso sin el estrés de tener que organizarlo todo por tu cuenta. Cada viaje es diferente, por eso diseño itinerarios a medida adaptados a <strong>tus gustos, tu presupuesto y tu forma de viajar.</strong>",
+          "Diseño tu viaje desde cero teniendo en cuenta tus intereses, el tiempo disponible y el presupuesto que quieres invertir. Nada de guías de viaje genéricas ni paquetes cerrados.",
+          "Recibirás un itinerario personalizado con toda la información organizada día a día: lugares que visitar, rutas recomendadas, horarios orientativos, actividades, restaurantes y consejos prácticos para aprovechar al máximo cada destino.",
+          "Te propongo las <strong>opciones que mejor se adaptan a tu viaje</strong> para que puedas reservar con tranquilidad y sabiendo que has encontrado alternativas acordes a tus necesidades.",
+          "Compartiré contigo <strong>recomendaciones</strong> basadas en opiniones de otros viajeros, rincones especiales, experiencias auténticas y consejos útiles que te ayudarán a disfrutar del destino como un viajero y no como un turista más.",
+          "Tanto si buscas una escapada de fin de semana, unas vacaciones en pareja, un road trip, una aventura por varios países o el viaje con el que llevas años soñando, crearé una propuesta <strong>pensada exclusivamente para ti.</strong>",
+          "Porque el mejor viaje no es el más caro ni el más popular. <strong>Es el que encaja contigo.</strong>"
+        ],
         eyebrow: "Mi historia",
         storyTitle: "Diseñando experiencias con alma y propósito",
         story1: "Soy Sandra, viajera incansable y creadora de experiencias a medida.",
@@ -141,6 +160,25 @@
         hero3: "No rushing, no impossible plans and no hours lost in front of a screen trying to organize everything. Behind every trip there is a different story: a getaway to disconnect, a pending dream, an improvised adventure or the desire to feel the excitement of discovering somewhere new again.",
         hero4: "Let me help shape that trip so all you have to do is enjoy the experience. I will create a detailed itinerary adapted to your style, with flight options, accommodation, special spots, restaurants, activities and practical tips so everything is organized clearly and easily.",
         hero5: "The idea is not just to travel... it is to collect moments, wander through unfamiliar streets, watch new sunsets and come home with memories that stay forever.",
+        helpTitle: "How can I help you?",
+        helpSubtitles: [
+          "✈️ Personalized planning",
+          "🗺️ Detailed, easy-to-follow itineraries",
+          "🏨 Flight and accommodation search",
+          "💡 Travel recommendations and tips",
+          "🌍 Trips adapted to you"
+        ],
+        helpParagraphs: [
+          "Organizing a trip should be an exciting part of the experience, but it often turns into hours of searching, endless comparisons and doubts about whether you are making the best decision.",
+          "That is where I can help.",
+          "As a <strong>Travel Planner</strong>, I offer you <strong>personalized travel consulting</strong> so you can enjoy the process without the stress of having to organize everything on your own. Every trip is different, so I design tailor-made itineraries adapted to <strong>your tastes, your budget and your way of travelling.</strong>",
+          "I design your trip from scratch, taking into account your interests, the time available and the budget you want to invest. No generic travel guides or closed packages.",
+          "You will receive a personalized itinerary with all the information organized day by day: places to visit, recommended routes, approximate schedules, activities, restaurants and practical tips to make the most of each destination.",
+          "I suggest the <strong>options that best suit your trip</strong> so you can book calmly, knowing you have found alternatives that match your needs.",
+          "I will share <strong>recommendations</strong> based on other travelers' opinions, special corners, authentic experiences and useful tips that will help you enjoy the destination as a traveler, not just another tourist.",
+          "Whether you are looking for a weekend getaway, a couples holiday, a road trip, an adventure through several countries or the trip you have dreamed of for years, I will create a proposal <strong>designed exclusively for you.</strong>",
+          "Because the best trip is not the most expensive or the most popular. <strong>It is the one that fits you.</strong>"
+        ],
         eyebrow: "My story",
         storyTitle: "Designing meaningful experiences with soul",
         story1: "I’m Sandra, a tireless traveller and creator of tailor-made experiences.",
@@ -170,6 +208,25 @@
         hero3: "Sans précipitation, sans plans impossibles et sans passer des heures devant un écran à tout organiser. Derrière chaque voyage se cache une histoire différente : une escapade pour déconnecter, un rêve en attente, une aventure improvisée ou l’envie de ressentir à nouveau l’émotion de découvrir un nouvel endroit.",
         hero4: "Laissez-moi donner forme à ce voyage pour que vous n’ayez qu’à profiter de l’expérience. Je créerai un itinéraire détaillé adapté à votre style, avec des propositions de vols, logements, lieux spéciaux, restaurants, activités et conseils pratiques pour que tout soit organisé simplement et clairement.",
         hero5: "L’idée n’est pas seulement de voyager... c’est de collectionner des moments, se perdre dans des rues inconnues, admirer de nouveaux couchers de soleil et rentrer avec des souvenirs qui restent pour toujours.",
+        helpTitle: "Comment puis-je vous aider ?",
+        helpSubtitles: [
+          "✈️ Planification personnalisée",
+          "🗺️ Itinéraires détaillés et faciles à suivre",
+          "🏨 Recherche de vols et d’hébergements",
+          "💡 Recommandations et conseils de voyage",
+          "🌍 Voyages adaptés à vous"
+        ],
+        helpParagraphs: [
+          "Organiser un voyage devrait être une partie enthousiasmante de l’expérience, mais cela se transforme souvent en heures de recherche, comparaisons infinies et doutes sur le fait de prendre la meilleure décision.",
+          "C’est là que je peux vous aider.",
+          "En tant que <strong>Travel Planner</strong>, je vous propose un <strong>conseil en voyages personnalisé</strong> afin que vous puissiez profiter du processus sans le stress de devoir tout organiser seul/e. Chaque voyage est différent, c’est pourquoi je crée des itinéraires sur mesure adaptés à <strong>vos goûts, votre budget et votre façon de voyager.</strong>",
+          "Je conçois votre voyage depuis zéro en tenant compte de vos intérêts, du temps disponible et du budget que vous souhaitez investir. Pas de guides génériques ni de forfaits fermés.",
+          "Vous recevrez un itinéraire personnalisé avec toutes les informations organisées jour par jour : lieux à visiter, itinéraires recommandés, horaires indicatifs, activités, restaurants et conseils pratiques pour profiter au maximum de chaque destination.",
+          "Je vous propose les <strong>options qui s’adaptent le mieux à votre voyage</strong> afin que vous puissiez réserver sereinement, en sachant que vous avez trouvé des alternatives en accord avec vos besoins.",
+          "Je partagerai avec vous des <strong>recommandations</strong> basées sur les avis d’autres voyageurs, des lieux spéciaux, des expériences authentiques et des conseils utiles pour profiter de la destination comme un voyageur, et non comme un simple touriste.",
+          "Que vous cherchiez une escapade de week-end, des vacances en couple, un road trip, une aventure à travers plusieurs pays ou le voyage dont vous rêvez depuis des années, je créerai une proposition <strong>pensée exclusivement pour vous.</strong>",
+          "Parce que le meilleur voyage n’est ni le plus cher ni le plus populaire. <strong>C’est celui qui vous correspond.</strong>"
+        ],
         eyebrow: "Mon histoire",
         storyTitle: "Créer des expériences avec âme et sens",
         story1: "Je suis Sandra, voyageuse infatigable et créatrice d’expériences sur mesure.",
@@ -645,6 +702,7 @@
       if (values[index]) p.innerHTML = values[index];
     });
     if (document.querySelector(".help-copy")) {
+      applyHelp(data);
       setText(".story .button", data.more);
       applyGuide(data);
       return;
@@ -657,6 +715,16 @@
     });
     setText(".story .button", data.more);
     applyGuide(data);
+  }
+
+  function applyHelp(data) {
+    setText(".help-copy h2", data.helpTitle);
+    document.querySelectorAll(".help-copy h3").forEach((heading, index) => {
+      if (data.helpSubtitles?.[index]) heading.textContent = data.helpSubtitles[index];
+    });
+    document.querySelectorAll(".help-copy p").forEach((paragraph, index) => {
+      if (data.helpParagraphs?.[index]) paragraph.innerHTML = data.helpParagraphs[index];
+    });
   }
 
   function applyGuide(data) {
