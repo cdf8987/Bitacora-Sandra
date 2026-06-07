@@ -105,7 +105,7 @@
       es: {
         title: "La Bitácora de Sandra",
         description: "Diseño de viajes personalizados para descubrir el mundo de una forma auténtica, cómoda y sin estrés.",
-        h1: "<span>Asesoría de viajes personalizada para crear</span><span>experiencias únicas</span>",
+        h1: "<span class=\"hero-title-main\">Asesoría de viajes</span><span class=\"hero-title-personalizada\">personalizada</span><span class=\"hero-title-script\">para crear experiencias únicas</span>",
         subtitle: "Escribiendo tu próxima gran aventura",
         lead: "Hay viajes que se recuerdan por los lugares que visitas. Y otros, por cómo te hicieron sentir.",
         hero2: "En <strong>La Bitácora de Sandra</strong> te ofrezco un servicio de <strong>asesoría de viajes personalizada</strong> para ayudarte a diseñar un <strong>viaje a medida</strong>, adaptado a tu ritmo, tus gustos y tu presupuesto.",
@@ -153,7 +153,7 @@
       en: {
         title: "La Bitácora de Sandra",
         description: "Tailor-made travel design to discover the world in an authentic, comfortable and stress-free way.",
-        h1: "<span>Personalized travel consulting to create</span><span>unique experiences</span>",
+        h1: "<span class=\"hero-title-main\">Personalized travel</span><span class=\"hero-title-personalizada\">consulting</span><span class=\"hero-title-script\">to create unique experiences</span>",
         subtitle: "Writing your next great adventure",
         lead: "Some trips are remembered for the places you visit. Others, for how they made you feel.",
         hero2: "At La Bitácora de Sandra, I help you prepare a trip designed for you, at your pace and according to the way you like to travel.",
@@ -201,7 +201,7 @@
       fr: {
         title: "La Bitácora de Sandra",
         description: "Création de voyages personnalisés pour découvrir le monde de façon authentique, confortable et sans stress.",
-        h1: "<span>Conseil en voyages personnalisé pour créer</span><span>des expériences uniques</span>",
+        h1: "<span class=\"hero-title-main\">Conseil en voyages</span><span class=\"hero-title-personalizada\">personnalisé</span><span class=\"hero-title-script\">pour créer des expériences uniques</span>",
         subtitle: "Écrivons votre prochaine grande aventure",
         lead: "Certains voyages restent en mémoire pour les lieux visités. D’autres, pour ce qu’ils vous ont fait ressentir.",
         hero2: "Chez La Bitácora de Sandra, je vous aide à préparer un voyage pensé pour vous, à votre rythme et selon votre façon de voyager.",
@@ -701,6 +701,7 @@
       const values = [data.hero2, data.hero3, data.hero4, data.hero5];
       if (values[index]) p.innerHTML = values[index];
     });
+    setText(".help-heading h2", data.helpTitle);
     if (document.querySelector(".help-copy")) {
       applyHelp(data);
       setText(".story .button", data.more);
