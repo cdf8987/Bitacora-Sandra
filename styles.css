@@ -36,6 +36,10 @@ img {
   max-width: 100%;
 }
 
+.is-hidden {
+  display: none;
+}
+
 a {
   color: inherit;
 }
@@ -158,7 +162,7 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 527px);
   column-gap: clamp(40px, 6vw, 96px);
-  row-gap: 22px;
+  row-gap: 34px;
   align-items: start;
   padding: 40px 53px 78px;
 }
@@ -178,18 +182,33 @@ h3 {
 h1 {
   margin: 0 0 24px;
   max-width: none;
-  font-size: clamp(3rem, 4.65vw, 4.3rem);
+  font-size: clamp(2.8rem, 4.1vw, 4rem);
   line-height: 0.98;
 }
 
 .hero > h1 {
   grid-column: 1 / -1;
-  margin-bottom: 2px;
+  min-height: clamp(260px, 26.2vw, 420px);
+  margin: 0 0 8px;
+  padding: clamp(42px, 5.2vw, 82px) clamp(34px, 4.9vw, 78px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: none;
+  border-radius: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255, 253, 247, 0.08) 0%, rgba(255, 253, 247, 0.04) 42%, rgba(255, 253, 247, 0) 72%),
+    url("hero-title-bg.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--brown);
 }
 
 .hero h1 span {
   display: block;
-  white-space: nowrap;
+  width: min(46%, 670px);
+  white-space: normal;
 }
 
 .hero-subtitle {
@@ -300,11 +319,13 @@ h1 {
 }
 
 .help-copy .story-return-title {
-  margin: 12px 0 24px;
+  margin: 0 0 22px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.2rem, 3.15vw, 3.35rem);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: clamp(1.9rem, 2.35vw, 2.55rem);
   font-weight: 400;
-  line-height: 0.98;
+  line-height: 1.08;
 }
 
 .help-copy p {
@@ -1088,6 +1109,9 @@ h1 {
 
   .hero > h1 {
     order: 1;
+    min-height: 250px;
+    padding: 34px 24px;
+    background-position: 62% center;
   }
 
   .hero-subtitle {
@@ -1107,10 +1131,20 @@ h1 {
   }
 
   .hero p,
-  .hero h1,
   .hero-subtitle {
     width: 100%;
     max-width: min(346px, calc(100vw - 44px)) !important;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: none !important;
+  }
+
+  .hero h1 span {
+    white-space: normal;
+    width: 66%;
+    max-width: 66%;
   }
 
   .hero-photo {
