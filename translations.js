@@ -701,7 +701,7 @@
       const values = [data.hero2, data.hero3, data.hero4, data.hero5];
       if (values[index]) p.innerHTML = values[index];
     });
-    setText(".help-heading h2", data.helpTitle);
+    applyHelpHeading(data);
     if (document.querySelector(".help-copy")) {
       applyHelp(data);
       setText(".story .button", data.more);
@@ -725,6 +725,16 @@
     });
     setText(".story-return-title", data.storyTitle);
     document.querySelectorAll(".help-copy p").forEach((paragraph, index) => {
+      if (data.helpParagraphs?.[index]) paragraph.innerHTML = data.helpParagraphs[index];
+    });
+  }
+
+  function applyHelpHeading(data) {
+    setText(".help-heading h2", data.helpTitle);
+    document.querySelectorAll(".help-heading h3").forEach((heading, index) => {
+      if (data.helpSubtitles?.[index]) heading.textContent = data.helpSubtitles[index];
+    });
+    document.querySelectorAll(".help-heading p").forEach((paragraph, index) => {
       if (data.helpParagraphs?.[index]) paragraph.innerHTML = data.helpParagraphs[index];
     });
   }

@@ -276,19 +276,41 @@ h1 {
 }
 
 .help-heading {
-  padding: 0 82px 34px;
+  padding: 0 82px 54px;
 }
 
-.help-heading h2 {
+.help-heading-card {
   width: min(1160px, 100%);
   margin: 0 auto;
   background: rgba(247, 241, 232, 0.86);
   border-radius: 54px;
-  padding: 42px 56px;
+  padding: clamp(40px, 4.2vw, 62px) clamp(44px, 5vw, 76px);
+}
+
+.help-heading h2 {
+  margin: 0 0 28px;
   font-size: clamp(3.1rem, 4.9vw, 5rem);
   line-height: 1;
   text-align: center;
   color: var(--brown);
+}
+
+.help-heading h3 {
+  margin: 34px 0 14px;
+  font-size: clamp(1.9rem, 2.35vw, 2.65rem);
+  line-height: 1.08;
+  color: var(--brown);
+}
+
+.help-heading p {
+  margin: 0 0 22px;
+  font-size: clamp(1.18rem, 1.45vw, 1.55rem);
+  line-height: 1.34;
+  text-align: justify;
+}
+
+.help-heading p:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: 901px) {
@@ -1228,10 +1250,23 @@ h1 {
     padding-bottom: 28px;
   }
 
-  .help-heading h2 {
+  .help-heading-card {
     border-radius: 34px;
     padding: 30px 22px;
+  }
+
+  .help-heading h2 {
     font-size: clamp(2.3rem, 10vw, 3.4rem);
+  }
+
+  .help-heading h3 {
+    margin-top: 28px;
+    font-size: clamp(1.45rem, 6vw, 2rem);
+  }
+
+  .help-heading p {
+    font-size: 1.08rem;
+    text-align: left;
   }
 
   .story {
